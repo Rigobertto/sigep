@@ -98,14 +98,19 @@ Retorna a lista paginada dos poços em formato JSON.
 - `sort`: Propriedade para ordenar. Ex: `sort=poco,asc`
 
 **Exemplos de Buscas:**
-- Buscar os primeiros 50 poços da PETROBRAS no Rio de Janeiro:
+- Buscar os primeiros 50 poços da Mandacaru Energia no Rio Grande do Norte:
   ```
   http://localhost:8080/api/pocos?operador=mandacaru&estado=RN&size=50
   ```
+Exemplo de retorno:
+<img width="1082" height="851" alt="image" src="https://github.com/user-attachments/assets/1fa17ba8-635a-48d3-8b99-7972313773c9" />
+  
 - Buscar todos os poços da Bacia de Campos que contenham "RJS" no nome:
   ```
   http://localhost:8080/api/pocos?bacia=Campos&poco=rjs
   ```
+Exemplo de retorno:
+<img width="1078" height="851" alt="image" src="https://github.com/user-attachments/assets/02cbe1fe-d350-447a-844f-6a4f4c08d659" />
 
 ---
 
@@ -115,3 +120,6 @@ Esta API conta com uma interface gráfica gerada automaticamente pelo **Swagger 
 
 Para acessar, com o servidor rodando, abra no seu navegador:
 **[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui/index.html)**
+
+<img width="720" height="326" alt="image" src="https://github.com/user-attachments/assets/6ab21c04-9df9-4774-b575-976587f5df7c" />
+
