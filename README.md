@@ -63,7 +63,7 @@ O servidor embutido do Tomcat será iniciado na porta **8080**.
 ## 📖 Como Usar a API (Endpoints)
 
 ### 1. Fazer o Upload do CSV
-Pega um arquivo CSV com os dados da ANP e o envia para ser inserido no banco de dados.
+Baixe o arquivo CSV de **poços perfurados no país** no [portal da ANP](https://cdp.anp.gov.br/ords/r/cdp_apex/consulta-dados-publicos-cdp/consulta-de-po%C3%A7os?clear=53&session=6339840443524&cs=3QHeSALUyBXA5JnGkImUqhW6v6aTkZLGZw0pjg4JeZS1qM9is7BpkO-j1PVUz39J5AwTyzPCCYEKHJclI7OwQfw) e utilize o seguinte endpoint para inserir os dados no banco.
 
 - **Método**: `POST`
 - **URL**: `http://localhost:8080/api/pocos/upload`
@@ -81,7 +81,7 @@ curl -F "file=@/caminho/completo/para/sua/planilha.csv" http://localhost:8080/ap
 ---
 
 ### 2. Listar e Filtrar os Dados Injetados
-Retorna a lista paginada dos poços em formato JSON.
+Com os dados já inseridos no banco você pode utilizar o seguinte endpoint para retornar estes dados já em formato JSON.
 
 - **Método**: `GET`
 - **URL**: `http://localhost:8080/api/pocos`
@@ -122,4 +122,5 @@ Para acessar, com o servidor rodando, abra no seu navegador:
 **[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui/index.html)**
 
 <img width="720" height="326" alt="image" src="https://github.com/user-attachments/assets/6ab21c04-9df9-4774-b575-976587f5df7c" />
+
 
