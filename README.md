@@ -1,4 +1,4 @@
-# SIGEP - API (Informações Gerenciais de Exploração e Produção)
+# SIGEP - API (API de Informações Gerenciais de Exploração e Produção)
 
 Esta é uma API desenvolvida em **Java + Spring Boot** responsável por realizar o processamento e a importação de planilhas de dados (CSV) da ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis), mais especificamente a tabela de **Poços Perfurados no País**, e disponibilizá-los em formato JSON através de endpoints REST.
 
